@@ -3,9 +3,9 @@ This is the source code for my current Tetris project, take a look and do whatev
 
 # Controls
 W - Hard drop
-S - Soft Drop
-A - Move piece left
-D - Move piece right
-J - Rotate piece left
-I - Rotate piece right
-H - Hold current piece
+<br>S - Soft Drop
+<br>A - Move piece left
+<br>D - Move piece right
+<br>J - Rotate piece left
+<br>I - Rotate piece right
+<br>H - Hold current piece
