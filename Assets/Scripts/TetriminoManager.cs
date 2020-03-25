@@ -12,6 +12,9 @@ public class TetriminoManager : MonoBehaviour
     [SerializeField] private BoardManager board;
     [SerializeField] private ScoreManager sManager;
 
+    // TODO: don't do this here, move it to a UI manager along with some of the score manager data.
+    [SerializeField] GameObject gameoverSprite;
+
     // Array of tetriminos that can spawn.
     [SerializeField] private Tetrimino[] tetriminos;
 
@@ -89,7 +92,9 @@ public class TetriminoManager : MonoBehaviour
         }
         else
         {
-            // TODO: game over logic
+            // game over logic
+            player.IsGameOver = true;
+            gameoverSprite.SetActive(true);
         }
     }
 

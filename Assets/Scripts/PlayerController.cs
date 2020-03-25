@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // references
     public Tetrimino CurrentTetrimino { get; set; }
 
     public Tetrimino HeldTetrimino { get; set; }
     public bool CanHold { get; set; } = true;
+    public bool IsGameOver { get; set; } = false; 
 
     private bool canAct = true;
 
@@ -89,16 +91,32 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void RestartGame()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        }
+    }
+
     private void Update()
     {
-        // movements that can be held.
-        if (canAct)
+        if (!IsGameOver)
         {
-            MoveTetrimino();
-            DropTetrimino();
-            RotateTetrimino();
-            HardDropTetrimino();
-            HoldTetrimino();
+            // movements that can be held.
+            if (canAct)
+            {
+                MoveTetrimino();
+                DropTetrimino();
+                RotateTetrimino();
+                HardDropTetrimino();
+                HoldTetrimino();
+            }
         }
+        if (IsGameOver)
+        {
+            RestartGame();
+        }
+
     }
 }

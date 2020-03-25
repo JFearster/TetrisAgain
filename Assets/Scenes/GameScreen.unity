@@ -120,6 +120,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &53187755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 971878682874483510, guid: f6491de960dbd24428f2366dcdd34698,
+    type: 3}
+  m_PrefabInstance: {fileID: 971878682220582643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &265718066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -342,6 +348,7 @@ MonoBehaviour:
   player: {fileID: 702184864}
   board: {fileID: 1081782920}
   sManager: {fileID: 1081782921}
+  gameoverSprite: {fileID: 53187755}
   tetriminos:
   - {fileID: 1868245561987450998, guid: 8f8c6339fbed8a04599456a3bf7c2317, type: 3}
   - {fileID: 959432008192379131, guid: ba9cc62fafa40d84eba67b1bba152077, type: 3}
@@ -466,6 +473,56 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 971878682708026067, guid: f6491de960dbd24428f2366dcdd34698,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 971878682874483508, guid: f6491de960dbd24428f2366dcdd34698,
+        type: 3}
+      propertyPath: m_Text
+      value: 'GAME OVER
+
+
+        PRESS ''P''
+
+        TO PLAY AGAIN'
+      objectReference: {fileID: 0}
+    - target: {fileID: 971878682874483508, guid: f6491de960dbd24428f2366dcdd34698,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 971878682874483508, guid: f6491de960dbd24428f2366dcdd34698,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 971878682874483508, guid: f6491de960dbd24428f2366dcdd34698,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 971878682874483508, guid: f6491de960dbd24428f2366dcdd34698,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 971878682874483508, guid: f6491de960dbd24428f2366dcdd34698,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 971878682874483509, guid: f6491de960dbd24428f2366dcdd34698,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 971878682874483509, guid: f6491de960dbd24428f2366dcdd34698,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 971878682874483510, guid: f6491de960dbd24428f2366dcdd34698,
         type: 3}
       propertyPath: m_IsActive
       value: 0
